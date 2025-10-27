@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">A</span>
+                <span className="text-white font-bold text-xs">Ag</span>
               </div>
               <span className="text-xl font-bold gradient-text">AgCluster</span>
             </div>
