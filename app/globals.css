@@ -23,11 +23,11 @@ body {
 }
 
 .gradient-text {
-  @apply bg-gradient-to-r from-primary-400 via-primary-500 to-purple-500 bg-clip-text text-transparent;
+  @apply text-white;
 }
 
 .glass-effect {
-  @apply bg-white/5 backdrop-blur-md border border-white/10;
+  @apply bg-zinc-900/50 border border-gray-800;
 }
 
 .glow-card {
@@ -38,11 +38,11 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(139, 92, 246, 0.1), transparent 80%);
+  background: transparent;
   opacity: 0;
   transition: opacity 0.3s;
 }
 
 .glow-card:hover::before {
-  opacity: 1;
+  opacity: 0;
 }
