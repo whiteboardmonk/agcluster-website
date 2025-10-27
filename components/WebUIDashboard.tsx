@@ -11,10 +11,10 @@ export default function WebUIDashboard() {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">Built-In Observability</span>
+            <span className="gradient-text">Prototype Agents Faster</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Real-time dashboard for monitoring agents in production
+            See every tool execution, task, and resource metric in real-time
           </p>
         </div>
 
