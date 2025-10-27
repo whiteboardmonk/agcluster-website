@@ -44,7 +44,7 @@ export default function Features() {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">Developer Platform for Claude SDK</span>
+            <span className="gradient-text">Claude Agent Cloud</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Web UI with real-time monitoring, configurable agents, and Docker isolation - developer platform with integrated tooling

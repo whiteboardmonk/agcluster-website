@@ -10,13 +10,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 border border-gray-700 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-br from-gray-700 to-gray-800 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xs">Ag</span>
               </div>
               <span className="text-xl font-bold text-white">AgCluster</span>
             </div>
             <p className="text-gray-400 text-sm">
-              Self-hosted platform for Claude Agent SDK
+              Self-hosted platform for Claude Agent SDK agents. Container isolation, real-time execution tracking, and Web UI dashboard—all running on your infrastructure.
             </p>
           </div>
 

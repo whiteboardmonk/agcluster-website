@@ -1,6 +1,6 @@
 'use client';
 
-import { CheckCircle2, Clock, Sparkles } from 'lucide-react';
+import { CheckCircle2, Clock } from 'lucide-react';
 
 const currentFeatures = [
   'Integrated Next.js 15 Web UI dashboard',
@@ -16,13 +16,6 @@ const inDevelopment = [
   'Multi-user authentication',
   'Prometheus metrics & Grafana dashboards',
   'Per-user/per-key rate limiting',
-];
-
-const roadmap = [
-  { name: 'agcluster-cli', desc: 'CLI for local agent development and deployment' },
-  { name: 'Advanced monitoring', desc: 'Prometheus metrics and Grafana dashboards' },
-  { name: 'agcluster-registry', desc: 'MCP server marketplace for custom tools' },
-  { name: 'agcluster-orchestrator', desc: 'Multi-agent coordination and workflow engine' },
 ];
 
 export default function Ecosystem() {
@@ -85,32 +78,10 @@ export default function Ecosystem() {
           </div>
         </div>
 
-        {/* Roadmap */}
-        <div className="border border-gray-800 rounded-xl p-8 bg-zinc-900/50">
-          <div className="flex items-center space-x-3 mb-8">
-            <div className="w-10 h-10 rounded-lg border border-gray-700 flex items-center justify-center">
-              <Sparkles className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-white">Roadmap</h3>
-              <p className="text-sm text-gray-400">Building the Ecosystem</p>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {roadmap.map((item, index) => (
-              <div key={index} className="p-6 bg-transparent rounded-lg border border-gray-800 hover:border-gray-700 transition-colors">
-                <h4 className="text-lg font-semibold text-white mb-2">{item.name}</h4>
-                <p className="text-gray-400 text-sm">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Vision statement */}
         <div className="mt-12 text-center">
           <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-            <span className="gradient-text font-semibold">The Vision:</span> Custom cloud infrastructure for deploying, managing, and scaling Claude Agent SDK applications.
+            <span className="gradient-text font-semibold">The Vision:</span> Custom cloud infrastructure for deploying, managing, and scaling Claude Agent SDK agents.
           </p>
         </div>
       </div>
