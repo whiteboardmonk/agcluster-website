@@ -25,7 +25,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Documentation</h3>
             <ul className="space-y-2">
               <li>
-                <a href="https://github.com/whiteboardmonk/agcluster-container#quick-start" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <a href="https://github.com/whiteboardmonk/agcluster-container?tab=readme-ov-file#-quick-start" className="text-gray-400 hover:text-white text-sm transition-colors">
                   Quick Start
                 </a>
               </li>

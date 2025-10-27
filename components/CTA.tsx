@@ -18,7 +18,7 @@ export default function CTA() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a
-              href="https://github.com/whiteboardmonk/agcluster-container#quick-start"
+              href="https://github.com/whiteboardmonk/agcluster-container?tab=readme-ov-file#-quick-start"
               className="group px-8 py-4 bg-white text-black rounded-lg hover:bg-gray-100 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 font-semibold"
             >
               <Terminal className="w-5 h-5" />
