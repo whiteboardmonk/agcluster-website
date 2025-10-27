@@ -7,42 +7,36 @@ const useCases = [
     icon: Code2,
     title: 'Build Development Agents',
     description: 'Agents that execute code, modify files, run tests, and deploy. Full CLI access with visibility into every command.',
-    gradient: 'from-blue-500 to-cyan-500',
     example: 'Code execution + file operations',
   },
   {
     icon: Search,
     title: 'Research & Analysis',
     description: 'Agents that search the web, fetch documents, analyze data with pandas/numpy, and generate reports with citations.',
-    gradient: 'from-purple-500 to-pink-500',
     example: 'WebSearch + data analysis + synthesis',
   },
   {
     icon: BarChart3,
     title: 'Data Analysis Agents',
     description: 'Jupyter-capable agents for statistical analysis, pandas workflows, and data visualization with NotebookEdit.',
-    gradient: 'from-green-500 to-emerald-500',
     example: 'CSV → pandas → matplotlib → insights',
   },
   {
     icon: Users,
     title: 'Multi-Agent Teams',
     description: 'Fullstack-team preset coordinates frontend, backend, and DevOps specialists for complex development tasks.',
-    gradient: 'from-orange-500 to-red-500',
     example: 'React + FastAPI + Docker',
   },
   {
     icon: Shield,
     title: 'Code Review Bots',
     description: 'Automated PR reviews with file access, security scanning, and style guide enforcement.',
-    gradient: 'from-indigo-500 to-purple-500',
     example: 'GitHub webhook → agent → review',
   },
   {
     icon: FileText,
     title: 'Research Assistants',
     description: 'Web-enabled agents that fetch sources, cross-reference facts, and generate cited reports.',
-    gradient: 'from-teal-500 to-cyan-500',
     example: 'WebSearch + WebFetch + synthesis',
   },
 ];
@@ -68,10 +62,10 @@ export default function UseCases() {
           {useCases.map((useCase, index) => (
             <div
               key={index}
-              className="group glow-card glass-effect rounded-xl p-8 hover:bg-white/5 transition-all duration-300 transform hover:-translate-y-2"
+              className="group border border-gray-800 rounded-xl p-8 bg-transparent hover:border-gray-700 transition-all duration-300"
             >
               {/* Icon */}
-              <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${useCase.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
+              <div className="w-14 h-14 rounded-xl border border-gray-800 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <useCase.icon className="w-7 h-7 text-white" />
               </div>
 
@@ -80,8 +74,8 @@ export default function UseCases() {
               <p className="text-gray-400 text-sm leading-relaxed mb-4">{useCase.description}</p>
 
               {/* Example tag */}
-              <div className="inline-block px-3 py-1 rounded-full bg-primary-500/10 border border-primary-500/20">
-                <span className="text-xs text-primary-300">{useCase.example}</span>
+              <div className="inline-block px-3 py-1 rounded-full border border-gray-800 bg-gray-900/50">
+                <span className="text-xs text-gray-400">{useCase.example}</span>
               </div>
             </div>
           ))}
@@ -91,10 +85,10 @@ export default function UseCases() {
         <div className="mt-16 text-center">
           <a
             href="https://github.com/whiteboardmonk/agcluster-container#use-cases"
-            className="inline-flex items-center space-x-2 px-6 py-3 glass-effect text-white rounded-lg hover:bg-white/10 transition-all"
+            className="inline-flex items-center space-x-2 px-6 py-3 border border-gray-800 text-white rounded-lg hover:border-gray-700 transition-all"
           >
             <span>Explore More Use Cases</span>
-            <span className="text-primary-400">→</span>
+            <span>→</span>
           </a>
         </div>
       </div>

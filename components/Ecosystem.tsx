@@ -28,11 +28,7 @@ const roadmap = [
 export default function Ecosystem() {
   return (
     <section id="ecosystem" className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-purple-950/10 to-black" />
-
-      {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-950/10 to-black" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
@@ -47,9 +43,9 @@ export default function Ecosystem() {
 
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {/* Current (v0.2) */}
-          <div className="glass-effect rounded-xl p-8">
+          <div className="border border-gray-800 rounded-xl p-8 bg-zinc-900/50">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-lg border border-gray-700 flex items-center justify-center">
                 <CheckCircle2 className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -68,9 +64,9 @@ export default function Ecosystem() {
           </div>
 
           {/* In Development */}
-          <div className="glass-effect rounded-xl p-8">
+          <div className="border border-gray-800 rounded-xl p-8 bg-zinc-900/50">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-lg border border-gray-700 flex items-center justify-center">
                 <Clock className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -90,9 +86,9 @@ export default function Ecosystem() {
         </div>
 
         {/* Roadmap */}
-        <div className="glass-effect rounded-xl p-8">
+        <div className="border border-gray-800 rounded-xl p-8 bg-zinc-900/50">
           <div className="flex items-center space-x-3 mb-8">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+            <div className="w-10 h-10 rounded-lg border border-gray-700 flex items-center justify-center">
               <Sparkles className="w-6 h-6 text-white" />
             </div>
             <div>
@@ -103,7 +99,7 @@ export default function Ecosystem() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {roadmap.map((item, index) => (
-              <div key={index} className="p-6 bg-white/5 rounded-lg border border-primary-500/20 hover:border-primary-500/40 transition-colors">
+              <div key={index} className="p-6 bg-transparent rounded-lg border border-gray-800 hover:border-gray-700 transition-colors">
                 <h4 className="text-lg font-semibold text-white mb-2">{item.name}</h4>
                 <p className="text-gray-400 text-sm">{item.desc}</p>
               </div>
