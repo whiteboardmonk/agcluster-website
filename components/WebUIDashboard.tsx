@@ -35,13 +35,13 @@ export default function WebUIDashboard() {
                 </div>
               </div>
 
-              {/* Content area - Placeholder */}
-              <div className="aspect-video flex flex-col items-center justify-center bg-gradient-to-br from-primary-950 via-purple-950 to-black p-8">
-                <Monitor className="w-16 h-16 text-primary-400/50 mb-4" />
-                <h3 className="text-2xl font-bold text-white mb-2">Web UI Dashboard</h3>
-                <p className="text-gray-400 text-center max-w-md">
-                  Screenshots coming soon - Web UI in active development
-                </p>
+              {/* Content area - Dashboard Screenshot */}
+              <div className="aspect-video bg-gradient-to-br from-primary-950 via-purple-950 to-black p-0">
+                <img
+                  src="/screenshots/dashboard.webp"
+                  alt="Web UI Dashboard"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
