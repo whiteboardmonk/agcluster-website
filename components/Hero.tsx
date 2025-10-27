@@ -18,7 +18,7 @@ export default function Hero() {
         {/* Main headline */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
           <span className="block mb-2">Claude Agent Infrastructure</span>
-          <span className="gradient-text">Deploy. Monitor. Scale.</span>
+          <span className="gradient-text">Test. Deploy. Scale.</span>
         </h1>
 
         {/* Subheadline */}
