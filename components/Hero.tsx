@@ -17,14 +17,13 @@ export default function Hero() {
 
         {/* Main headline */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
-          <span className="block mb-2">Claude Agent Code</span>
-          <span className="gradient-text">Container Platform</span>
+          <span className="block mb-2">Claude Agent Infrastructure</span>
+          <span className="gradient-text">Deploy. Monitor. Scale.</span>
         </h1>
 
         {/* Subheadline */}
         <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto animate-slide-up" style={{ animationDelay: '0.1s' }}>
-          Self-hosted developer platform for Claude Agent SDK with integrated Web UI, real-time monitoring, and task tracking.
-          Deploy agents with full visibility and control.
+          Self-hosted platform for Claude Agent SDK applications. Container isolation, real-time execution tracking, and Web UI dashboard—all running on your infrastructure.
         </p>
 
         {/* CTA Buttons */}
