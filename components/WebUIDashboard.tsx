@@ -19,31 +19,26 @@ export default function WebUIDashboard() {
         </div>
 
         {/* Screenshot Container - Profound Style */}
-        <div className="max-w-5xl mx-auto mb-16 border border-gray-800 rounded-xl p-8 bg-zinc-900/50">
-          <div className="border border-gray-800 rounded-lg overflow-hidden bg-black">
-            {/* Browser Frame */}
-            <div className="bg-black">
-              {/* Browser chrome */}
-              <div className="bg-zinc-900 px-4 py-3 flex items-center space-x-2 border-b border-gray-800">
-                <div className="flex space-x-2">
-                  <div className="w-3 h-3 rounded-full bg-red-500" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                  <div className="w-3 h-3 rounded-full bg-green-500" />
-                </div>
-                <div className="flex-1 ml-4 text-xs text-gray-600 bg-zinc-800 rounded px-3 py-1">
-                  localhost:3000
-                </div>
-              </div>
-
-              {/* Content area - Dashboard Screenshot */}
-              <div style={{ aspectRatio: '2590 / 1916' }} className="bg-black p-0">
-                <img
-                  src="/screenshots/dashboard.webp"
-                  alt="Web UI Dashboard"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+        <div className="max-w-5xl mx-auto mb-16 border border-gray-800 rounded-lg overflow-hidden bg-black">
+          {/* Browser chrome */}
+          <div className="bg-zinc-900 px-4 py-3 flex items-center space-x-2 border-b border-gray-800">
+            <div className="flex space-x-2">
+              <div className="w-3 h-3 rounded-full bg-red-500" />
+              <div className="w-3 h-3 rounded-full bg-yellow-500" />
+              <div className="w-3 h-3 rounded-full bg-green-500" />
             </div>
+            <div className="flex-1 ml-4 text-xs text-gray-600 bg-zinc-800 rounded px-3 py-1">
+              localhost:3000
+            </div>
+          </div>
+
+          {/* Content area - Dashboard Screenshot */}
+          <div style={{ aspectRatio: '2590 / 1916' }} className="bg-black p-0">
+            <img
+              src="/screenshots/dashboard.webp"
+              alt="Web UI Dashboard"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
 
