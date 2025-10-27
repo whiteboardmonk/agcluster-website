@@ -52,7 +52,7 @@ export default function WebUIDashboard() {
         </div>
 
         {/* Screenshot Container - Slideshow */}
-        <div className="max-w-4xl mx-auto mb-16 border border-gray-800 rounded-lg overflow-hidden bg-black">
+        <div className="max-w-2xl mx-auto mb-16 border border-gray-800 rounded-lg overflow-hidden bg-black">
           {/* Browser chrome */}
           <div className="bg-zinc-900 px-4 py-3 flex items-center space-x-2 border-b border-gray-800">
             <div className="flex space-x-2">
