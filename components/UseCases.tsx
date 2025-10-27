@@ -85,6 +85,8 @@ export default function UseCases() {
         <div className="mt-16 text-center">
           <a
             href="https://github.com/whiteboardmonk/agcluster-container?tab=readme-ov-file#-use-cases"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center space-x-2 px-6 py-3 border border-gray-800 text-white rounded-lg hover:border-gray-700 transition-all"
           >
             <span>Explore More Use Cases</span>

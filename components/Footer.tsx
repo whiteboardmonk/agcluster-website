@@ -25,22 +25,22 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Documentation</h3>
             <ul className="space-y-2">
               <li>
-                <a href="https://github.com/whiteboardmonk/agcluster-container?tab=readme-ov-file#-quick-start" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <a href="https://github.com/whiteboardmonk/agcluster-container?tab=readme-ov-file#-quick-start" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm transition-colors">
                   Quick Start
                 </a>
               </li>
               <li>
-                <a href="https://github.com/whiteboardmonk/agcluster-container#api-reference" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <a href="https://github.com/whiteboardmonk/agcluster-container#api-reference" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm transition-colors">
                   API Reference
                 </a>
               </li>
               <li>
-                <a href="https://github.com/whiteboardmonk/agcluster-container#agent-configurations" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <a href="https://github.com/whiteboardmonk/agcluster-container#agent-configurations" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm transition-colors">
                   Agent Configs
                 </a>
               </li>
               <li>
-                <a href="https://github.com/whiteboardmonk/agcluster-container#architecture" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <a href="https://github.com/whiteboardmonk/agcluster-container#architecture" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm transition-colors">
                   Architecture
                 </a>
               </li>
@@ -52,22 +52,22 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <a href="https://github.com/whiteboardmonk/agcluster-container" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <a href="https://github.com/whiteboardmonk/agcluster-container" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm transition-colors">
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="https://github.com/whiteboardmonk/agcluster-container/issues" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <a href="https://github.com/whiteboardmonk/agcluster-container/issues" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm transition-colors">
                   Issues
                 </a>
               </li>
               <li>
-                <a href="https://github.com/whiteboardmonk/agcluster-container/discussions" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <a href="https://github.com/whiteboardmonk/agcluster-container/discussions" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm transition-colors">
                   Discussions
                 </a>
               </li>
               <li>
-                <a href="https://docs.claude.com/en/api/agent-sdk/overview" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <a href="https://docs.claude.com/en/api/agent-sdk/overview" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm transition-colors">
                   Claude SDK Docs
                 </a>
               </li>
@@ -79,17 +79,17 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Community</h3>
             <ul className="space-y-2">
               <li>
-                <a href="https://github.com/anthropics/claude-agent-sdk-python" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <a href="https://github.com/anthropics/claude-agent-sdk-python" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm transition-colors">
                   Claude Agent SDK
                 </a>
               </li>
               <li>
-                <a href="https://github.com/whiteboardmonk/agcluster-container/blob/main/CONTRIBUTING.md" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <a href="https://github.com/whiteboardmonk/agcluster-container/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm transition-colors">
                   Contributing
                 </a>
               </li>
               <li>
-                <a href="https://github.com/whiteboardmonk/agcluster-container/blob/main/LICENSE" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <a href="https://github.com/whiteboardmonk/agcluster-container/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm transition-colors">
                   License (MIT)
                 </a>
               </li>
