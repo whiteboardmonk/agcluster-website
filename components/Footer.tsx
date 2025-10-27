@@ -99,9 +99,14 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2025 AgCluster. Built with ❤️ by Claude Code
-          </p>
+          <div className="mb-4 md:mb-0">
+            <p className="text-gray-400 text-sm mb-2">
+              © 2025 AgCluster. Built with ❤️ by Claude Code
+            </p>
+            <p className="text-gray-500 text-xs">
+              Not affiliated with or endorsed by Anthropic PBC
+            </p>
+          </div>
 
           {/* Social links */}
           <div className="flex space-x-4">

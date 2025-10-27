@@ -6,6 +6,10 @@ The official marketing website for [AgCluster](https://github.com/whiteboardmonk
 
 This is a Next.js 15 marketing site showcasing AgCluster's capabilities for building, deploying, and managing Claude Agent SDK agents with integrated Web UI, real-time monitoring, and task tracking.
 
+## Disclaimer
+
+**AgCluster is an independent open-source project and is not affiliated with, endorsed by, or sponsored by Anthropic PBC.** Claude, Claude Code, and Claude Agent SDK are trademarks of Anthropic PBC. This project is built to work with the Claude Agent SDK but operates independently.
+
 ## Tech Stack
 
 - **Framework**: Next.js 15 with App Router
