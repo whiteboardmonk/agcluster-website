@@ -36,7 +36,7 @@ export default function WebUIDashboard() {
               </div>
 
               {/* Content area - Dashboard Screenshot */}
-              <div className="aspect-video bg-gradient-to-br from-primary-950 via-purple-950 to-black p-0">
+              <div style={{ aspectRatio: '2590 / 1916' }} className="bg-gradient-to-br from-primary-950 via-purple-950 to-black p-0">
                 <img
                   src="/screenshots/dashboard.webp"
                   alt="Web UI Dashboard"
