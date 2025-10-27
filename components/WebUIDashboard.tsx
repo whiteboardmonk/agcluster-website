@@ -18,25 +18,25 @@ export default function WebUIDashboard() {
           </p>
         </div>
 
-        {/* Screenshot Placeholder */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <div className="glass-effect rounded-xl overflow-hidden border border-primary-500/20">
+        {/* Screenshot Container - Profound Style */}
+        <div className="max-w-5xl mx-auto mb-16 border border-gray-800 rounded-xl p-8 bg-zinc-900/50">
+          <div className="border border-gray-800 rounded-lg overflow-hidden bg-black">
             {/* Browser Frame */}
-            <div className="bg-gradient-to-b from-primary-950/50 to-black">
+            <div className="bg-black">
               {/* Browser chrome */}
-              <div className="bg-gray-900 px-4 py-3 flex items-center space-x-2 border-b border-gray-800">
+              <div className="bg-zinc-900 px-4 py-3 flex items-center space-x-2 border-b border-gray-800">
                 <div className="flex space-x-2">
                   <div className="w-3 h-3 rounded-full bg-red-500" />
                   <div className="w-3 h-3 rounded-full bg-yellow-500" />
                   <div className="w-3 h-3 rounded-full bg-green-500" />
                 </div>
-                <div className="flex-1 ml-4 text-xs text-gray-500 bg-gray-800/50 rounded px-3 py-1">
+                <div className="flex-1 ml-4 text-xs text-gray-600 bg-zinc-800 rounded px-3 py-1">
                   localhost:3000
                 </div>
               </div>
 
               {/* Content area - Dashboard Screenshot */}
-              <div style={{ aspectRatio: '2590 / 1916' }} className="bg-gradient-to-br from-primary-950 via-purple-950 to-black p-0">
+              <div style={{ aspectRatio: '2590 / 1916' }} className="bg-black p-0">
                 <img
                   src="/screenshots/dashboard.webp"
                   alt="Web UI Dashboard"
@@ -50,8 +50,8 @@ export default function WebUIDashboard() {
         {/* Feature Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {/* Feature 1 */}
-          <div className="glass-effect rounded-xl p-6">
-            <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mb-4">
+          <div className="border border-gray-800 rounded-xl p-6 bg-transparent">
+            <div className="w-12 h-12 rounded-lg bg-transparent flex items-center justify-center mb-4">
               <Activity className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-lg font-semibold text-white mb-2">Tool Execution Streaming</h3>
@@ -59,8 +59,8 @@ export default function WebUIDashboard() {
           </div>
 
           {/* Feature 2 */}
-          <div className="glass-effect rounded-xl p-6">
-            <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center mb-4">
+          <div className="border border-gray-800 rounded-xl p-6 bg-transparent">
+            <div className="w-12 h-12 rounded-lg bg-transparent flex items-center justify-center mb-4">
               <BarChart3 className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-lg font-semibold text-white mb-2">Resource Monitoring</h3>
@@ -68,8 +68,8 @@ export default function WebUIDashboard() {
           </div>
 
           {/* Feature 3 */}
-          <div className="glass-effect rounded-xl p-6">
-            <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mb-4">
+          <div className="border border-gray-800 rounded-xl p-6 bg-transparent">
+            <div className="w-12 h-12 rounded-lg bg-transparent flex items-center justify-center mb-4">
               <Monitor className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-lg font-semibold text-white mb-2">Task Tracking</h3>
@@ -77,8 +77,8 @@ export default function WebUIDashboard() {
           </div>
 
           {/* Feature 4 */}
-          <div className="glass-effect rounded-xl p-6">
-            <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center mb-4">
+          <div className="border border-gray-800 rounded-xl p-6 bg-transparent">
+            <div className="w-12 h-12 rounded-lg bg-transparent flex items-center justify-center mb-4">
               <Users className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-lg font-semibold text-white mb-2">Session Management</h3>
@@ -88,9 +88,9 @@ export default function WebUIDashboard() {
 
         {/* Differentiator */}
         <div className="mt-16 text-center">
-          <div className="glass-effect rounded-lg p-8 max-w-2xl mx-auto border border-primary-500/30">
+          <div className="border border-gray-800 rounded-lg p-8 max-w-2xl mx-auto bg-zinc-900/30">
             <p className="text-gray-300 text-lg">
-              <span className="text-primary-300 font-semibold">Most Claude SDK tools stop at the API.</span>
+              <span className="text-white font-semibold">Most Claude SDK tools stop at the API.</span>
               <br />
               <span className="mt-2 block">AgCluster includes the dashboard.</span>
             </p>
