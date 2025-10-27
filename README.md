@@ -1,10 +1,14 @@
 # AgCluster Marketing Website
 
-The official marketing website for [AgCluster](https://github.com/whiteboardmonk/agcluster-container) - a self-hosted developer platform for Claude Agent SDK.
+The official marketing website for [AgCluster](https://github.com/whiteboardmonk/agcluster-container) - Claude Agent Cloud - a self-hosted platform for Claude Agent SDK agents.
 
 ## Overview
 
-This is a Next.js 15 marketing site showcasing AgCluster's capabilities for building, deploying, and managing Claude Agent SDK applications with integrated Web UI, real-time monitoring, and task tracking.
+This is a Next.js 15 marketing site showcasing AgCluster's capabilities for building, deploying, and managing Claude Agent SDK agents with integrated Web UI, real-time monitoring, and task tracking.
+
+## Disclaimer
+
+**AgCluster is an independent open-source project and is not affiliated with, endorsed by, or sponsored by Anthropic PBC.** Claude, Claude Code, and Claude Agent SDK are trademarks of Anthropic PBC. This project is built to work with the Claude Agent SDK but operates independently.
 
 ## Tech Stack
 

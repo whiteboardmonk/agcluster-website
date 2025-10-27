@@ -9,13 +9,13 @@ export default function Navigation() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 border border-gray-700 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xs">Ag</span>
+          <div className="flex items-center space-x-3">
+            <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
+              <span className="text-white font-bold text-xl">Ag</span>
             </div>
-            <span className="text-xl font-bold text-white">AgCluster</span>
+            <span className="text-2xl font-bold text-white">AgCluster</span>
           </div>
 
           {/* Desktop Menu */}

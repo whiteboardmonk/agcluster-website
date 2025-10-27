@@ -1,8 +1,41 @@
 'use client';
 
 import { Monitor, Activity, BarChart3, Users } from 'lucide-react';
+import { useState, useEffect } from 'react';
+
+const screenshots = [
+  {
+    src: '/screenshots/screenshot-dashboard-1.webp',
+    alt: 'Dashboard - Tool Execution Monitoring',
+  },
+  {
+    src: '/screenshots/screenshot-sessions-2.webp',
+    alt: 'Sessions - Container Management',
+  },
+  {
+    src: '/screenshots/screenshot-builder3.webp',
+    alt: 'Builder - Agent Development',
+  },
+  {
+    src: '/screenshots/screenshot-data-agent-4.webp',
+    alt: 'Data Agent - Analysis Capabilities',
+  },
+];
 
 export default function WebUIDashboard() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % screenshots.length);
+    }, 5000); // Change screenshot every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const goToSlide = (index: number) => {
+    setCurrentIndex(index);
+  };
   return (
     <section className="py-24 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-black via-primary-950/20 to-black" />
@@ -18,8 +51,8 @@ export default function WebUIDashboard() {
           </p>
         </div>
 
-        {/* Screenshot Container - Profound Style */}
-        <div className="max-w-5xl mx-auto mb-16 border border-gray-800 rounded-lg overflow-hidden bg-black">
+        {/* Screenshot Container - Slideshow */}
+        <div className="max-w-4xl mx-auto mb-16 border border-gray-800 rounded-lg overflow-hidden bg-black">
           {/* Browser chrome */}
           <div className="bg-zinc-900 px-4 py-3 flex items-center space-x-2 border-b border-gray-800">
             <div className="flex space-x-2">
@@ -32,13 +65,32 @@ export default function WebUIDashboard() {
             </div>
           </div>
 
-          {/* Content area - Dashboard Screenshot */}
-          <div style={{ aspectRatio: '2590 / 1916' }} className="bg-black p-0">
-            <img
-              src="/screenshots/dashboard.webp"
-              alt="Web UI Dashboard"
-              className="w-full h-full object-cover"
-            />
+          {/* Content area - Screenshot Slideshow */}
+          <div style={{ aspectRatio: '1186 / 962' }} className="bg-black p-0 relative">
+            {screenshots.map((screenshot, index) => (
+              <img
+                key={index}
+                src={screenshot.src}
+                alt={screenshot.alt}
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+                  index === currentIndex ? 'opacity-100' : 'opacity-0'
+                }`}
+              />
+            ))}
+          </div>
+
+          {/* Slideshow Indicators */}
+          <div className="bg-zinc-900 px-4 py-3 flex items-center justify-center space-x-2 border-t border-gray-800">
+            {screenshots.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={`w-2 h-2 rounded-full transition-colors ${
+                  index === currentIndex ? 'bg-white' : 'bg-gray-600'
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
           </div>
         </div>
 
