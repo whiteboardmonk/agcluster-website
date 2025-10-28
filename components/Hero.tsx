@@ -12,7 +12,7 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-gray-900/50 border border-gray-800 mb-8 animate-fade-in">
           <span className="w-2 h-2 bg-gray-500 rounded-full animate-pulse" />
-          <span className="text-sm text-gray-400">v0.2 • Active Development</span>
+          <span className="text-sm text-gray-400">v0.2 • Open Source • Active Development</span>
         </div>
 
         {/* Main headline */}
@@ -72,26 +72,6 @@ open http://localhost:3000
 curl http://localhost:8000/api/configs/`}
               </code>
             </pre>
-          </div>
-        </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 max-w-4xl mx-auto">
-          <div className="text-center">
-            <div className="text-3xl font-bold gradient-text mb-2">212</div>
-            <div className="text-sm text-gray-400">Tests Passing</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold gradient-text mb-2">66%</div>
-            <div className="text-sm text-gray-400">Coverage</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold gradient-text mb-2">Web UI</div>
-            <div className="text-sm text-gray-400">Integrated Dashboard</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold gradient-text mb-2">4</div>
-            <div className="text-sm text-gray-400">Agent Presets</div>
           </div>
         </div>
       </div>

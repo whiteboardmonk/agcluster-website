@@ -1,7 +1,8 @@
 'use client';
 
-import { Monitor, Activity, BarChart3, Users } from 'lucide-react';
+import { Monitor, Activity, Layout, Code, Box, Users } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const screenshots = [
   {
@@ -47,7 +48,7 @@ export default function WebUIDashboard() {
             <span className="gradient-text">Prototype Agents Faster</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            See every tool execution, task, and resource metric in real-time
+            Build, test, and iterate on AI agents with full visibility into every action
           </p>
         </div>
 
@@ -68,11 +69,13 @@ export default function WebUIDashboard() {
           {/* Content area - Screenshot Slideshow */}
           <div style={{ aspectRatio: '1186 / 962' }} className="bg-black p-0 relative">
             {screenshots.map((screenshot, index) => (
-              <img
+              <Image
                 key={index}
                 src={screenshot.src}
                 alt={screenshot.alt}
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+                fill
+                sizes="(max-width: 768px) 100vw, 672px"
+                className={`object-cover transition-opacity duration-500 ${
                   index === currentIndex ? 'opacity-100' : 'opacity-0'
                 }`}
               />
@@ -95,52 +98,75 @@ export default function WebUIDashboard() {
         </div>
 
         {/* Feature Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Feature 1 */}
           <div className="border border-gray-800 rounded-xl p-6 bg-transparent">
-            <div className="w-12 h-12 rounded-lg bg-transparent flex items-center justify-center mb-4">
+            <div className="w-12 h-12 rounded-lg border border-gray-800 flex items-center justify-center mb-4">
+              <Layout className="w-6 h-6 text-white" />
+            </div>
+            <h3 className="text-lg font-semibold text-white mb-2">Integrated Web UI</h3>
+            <p className="text-gray-400 text-sm">Next.js 15 dashboard with real-time tool execution monitoring, task tracking, and resource usage visualization.</p>
+          </div>
+
+          {/* Feature 2 */}
+          <div className="border border-gray-800 rounded-xl p-6 bg-transparent">
+            <div className="w-12 h-12 rounded-lg border border-gray-800 flex items-center justify-center mb-4">
+              <Code className="w-6 h-6 text-white" />
+            </div>
+            <h3 className="text-lg font-semibold text-white mb-2">Custom Agent Configs</h3>
+            <p className="text-gray-400 text-sm">4 preset configs (code-assistant, research-agent, data-analysis, fullstack-team) plus custom inline configs.</p>
+          </div>
+
+          {/* Feature 3 */}
+          <div className="border border-gray-800 rounded-xl p-6 bg-transparent">
+            <div className="w-12 h-12 rounded-lg border border-gray-800 flex items-center justify-center mb-4">
+              <Box className="w-6 h-6 text-white" />
+            </div>
+            <h3 className="text-lg font-semibold text-white mb-2">Docker Isolation</h3>
+            <p className="text-gray-400 text-sm">Each session runs in isolated containers with full resource limits and security hardening.</p>
+          </div>
+
+          {/* Feature 4 */}
+          <div className="border border-gray-800 rounded-xl p-6 bg-transparent">
+            <div className="w-12 h-12 rounded-lg border border-gray-800 flex items-center justify-center mb-4">
               <Activity className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-lg font-semibold text-white mb-2">Tool Execution Streaming</h3>
             <p className="text-gray-400 text-sm">Watch Bash commands, file operations, and web requests execute in real-time via SSE</p>
           </div>
 
-          {/* Feature 2 */}
+          {/* Feature 5 */}
           <div className="border border-gray-800 rounded-xl p-6 bg-transparent">
-            <div className="w-12 h-12 rounded-lg bg-transparent flex items-center justify-center mb-4">
-              <BarChart3 className="w-6 h-6 text-white" />
-            </div>
-            <h3 className="text-lg font-semibold text-white mb-2">Resource Monitoring</h3>
-            <p className="text-gray-400 text-sm">Live CPU, memory, and disk metrics per container with usage graphs</p>
-          </div>
-
-          {/* Feature 3 */}
-          <div className="border border-gray-800 rounded-xl p-6 bg-transparent">
-            <div className="w-12 h-12 rounded-lg bg-transparent flex items-center justify-center mb-4">
+            <div className="w-12 h-12 rounded-lg border border-gray-800 flex items-center justify-center mb-4">
               <Monitor className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-lg font-semibold text-white mb-2">Task Tracking</h3>
             <p className="text-gray-400 text-sm">TodoWrite integration with live status updates - track progress visually</p>
           </div>
 
-          {/* Feature 4 */}
+          {/* Feature 6 */}
           <div className="border border-gray-800 rounded-xl p-6 bg-transparent">
-            <div className="w-12 h-12 rounded-lg bg-transparent flex items-center justify-center mb-4">
+            <div className="w-12 h-12 rounded-lg border border-gray-800 flex items-center justify-center mb-4">
               <Users className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-lg font-semibold text-white mb-2">Session Management</h3>
-            <p className="text-gray-400 text-sm">View active containers, manage persistent sessions, trigger cleanup</p>
+            <h3 className="text-lg font-semibold text-white mb-2">Multi-Agent Orchestration</h3>
+            <p className="text-gray-400 text-sm">Fullstack-team preset with 3 specialized sub-agents (frontend, backend, devops) working together.</p>
           </div>
         </div>
 
-        {/* Differentiator */}
+        {/* Technology Stack */}
         <div className="mt-16 text-center">
-          <div className="border border-gray-800 rounded-lg p-8 max-w-2xl mx-auto bg-zinc-900/30">
-            <p className="text-gray-300 text-lg">
-              <span className="text-white font-semibold">Most Claude SDK tools stop at the API.</span>
-              <br />
-              <span className="mt-2 block">AgCluster includes the dashboard.</span>
-            </p>
+          <p className="text-gray-400 mb-6">
+            Built with modern technologies for maximum reliability
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <span className="px-4 py-2 rounded-full border border-gray-800 text-sm text-gray-300">Next.js 15</span>
+            <span className="px-4 py-2 rounded-full border border-gray-800 text-sm text-gray-300">Python 3.11+</span>
+            <span className="px-4 py-2 rounded-full border border-gray-800 text-sm text-gray-300">FastAPI</span>
+            <span className="px-4 py-2 rounded-full border border-gray-800 text-sm text-gray-300">Docker</span>
+            <span className="px-4 py-2 rounded-full border border-gray-800 text-sm text-gray-300">Claude SDK</span>
+            <span className="px-4 py-2 rounded-full border border-gray-800 text-sm text-gray-300">SSE/WebSockets</span>
+            <span className="px-4 py-2 rounded-full border border-gray-800 text-sm text-gray-300">Playwright</span>
           </div>
         </div>
       </div>
