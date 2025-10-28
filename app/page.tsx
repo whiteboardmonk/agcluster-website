@@ -1,6 +1,5 @@
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
-import Features from '@/components/Features';
 import WebUIDashboard from '@/components/WebUIDashboard';
 import UseCases from '@/components/UseCases';
 import Ecosystem from '@/components/Ecosystem';
@@ -13,7 +12,6 @@ export default function Home() {
       <Navigation />
       <div className="pt-16">
         <Hero />
-        <Features />
         <WebUIDashboard />
         <UseCases />
         <Ecosystem />

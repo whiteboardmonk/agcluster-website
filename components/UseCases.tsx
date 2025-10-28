@@ -50,10 +50,10 @@ export default function UseCases() {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">Agent Deployment Patterns</span>
+            <span className="gradient-text">Built-in Agent Presets</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Monitor and manage agents that actually execute code
+            Start with battle-tested configurations for code, research, and data tasks
           </p>
         </div>
 
