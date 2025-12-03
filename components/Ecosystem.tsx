@@ -3,19 +3,21 @@
 import { CheckCircle2, Clock } from 'lucide-react';
 
 const currentFeatures = [
-  'Integrated Next.js 15 Web UI dashboard',
-  'Real-time tool execution monitoring (SSE)',
-  'Live resource tracking (CPU/memory/disk)',
-  'Task tracking with TodoWrite integration',
-  'Claude Agent SDK platform - not API wrapper',
-  '212 tests passing with 66% coverage',
+  'Self-hosted Claude Agent SDK platform with REST API + Web UI',
+  'Docker container isolation with multi-session support (BYOK)',
+  'Server-sent events streaming for real-time tool execution',
+  'Preset agent configurations (code-assistant, research, data-analysis, fullstack-team)',
+  'File operations: upload, preview, download with Monaco viewer',
+  'Multi-provider support: Docker (default) and Fly Machines',
 ];
 
 const inDevelopment = [
-  'Container pooling & session persistence',
-  'Multi-user authentication',
-  'Prometheus metrics & Grafana dashboards',
-  'Per-user/per-key rate limiting',
+  'Multi-user authentication with per-key limits',
+  'Usage metering and quotas',
+  'Prometheus metrics, Grafana dashboards, and richer monitoring',
+  'Kubernetes deployment target',
+  'Conversation export and audit visibility',
+  'Additional agent presets for specialized workloads',
 ];
 
 export default function Ecosystem() {
@@ -35,15 +37,15 @@ export default function Ecosystem() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
-          {/* Current (v0.2) */}
+          {/* Current (v0.3.1) */}
           <div className="border border-gray-800 rounded-xl p-8 bg-zinc-900/50">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 rounded-lg border border-gray-700 flex items-center justify-center">
                 <CheckCircle2 className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-white">Current (v0.2)</h3>
-                <p className="text-sm text-gray-400">v1.0 Released</p>
+                <h3 className="text-2xl font-bold text-white">Current (v0.3.1)</h3>
+                <p className="text-sm text-gray-400">Alpha channel</p>
               </div>
             </div>
             <div className="space-y-3">
